@@ -67,8 +67,10 @@ in your project directory:
 - Install ESLint using: ```npm install --save-dev eslint```
 
 ## Configuration files
-```package.json``
+
+## package.json
 Click to show/hide file contents
+```
 {
   "scripts": {
     "lint": "./node_modules/.bin/eslint",
@@ -88,10 +90,11 @@ Click to show/hide file contents
     "jest": "^24.9.0"
   }
 }
+```
 
-
-```babel.config.js```
+## babel.config.js
 Click to show/hide file contents
+```
 module.exports = {
   presets: [
     [
@@ -104,10 +107,11 @@ module.exports = {
     ],
   ],
 };
+```
 
-
-```.eslintrc.js```
+## .eslintrc.js
 Click to show/hide file contents
+```
 module.exports = {
   env: {
     browser: false,
@@ -143,6 +147,7 @@ module.exports = {
     }
   ]
 };
+```
 
 
 ## Finally…
