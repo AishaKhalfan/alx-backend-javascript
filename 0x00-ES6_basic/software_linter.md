@@ -17,11 +17,11 @@ Passive checking is done by taking a piece of code, and manually running it thro
 
 ### Examples
 Screenshot of an active linter **pycodestyle** (Python) integrated into Visual Studio Code
-
+![image](https://github.com/AishaKhalfan/alx-backend-javascript/blob/main/0x00-ES6_basic/pycodestyle.png)
 Screenshot of an active linter ESLint (JavaScript) integrated into Visual Studio Code
-
+![image](https://github.com/AishaKhalfan/alx-backend-javascript/blob/main/0x00-ES6_basic/ESLint.png)
 Screenshot of a passive online linter service JSON Formatter to validate a JSON data structure
-
+![image](https://github.com/AishaKhalfan/alx-backend-javascript/blob/main/0x00-ES6_basic/JSONFormatter.png)
 Fun fact: The term “lint” was derived from the name of the tiny bits of fiber and fluff shed by clothing.
 
 References
