@@ -85,7 +85,22 @@ createUser returns a response with the format
 
 ## Task 0. **Keep every promise you make and only make promises you can keep**<br/>[0-promise.js](0-promise.js) contains a script that exports a function with the prototype `function getResponseFromAPI()`, which returns a Promise.
 
-## Task 1. **Don't make a promise...if you know you can't keep it**<br/>[1-promise.js](1-promise.js) contains a script that exports a function with the prototype `getFullResponseFromAPI(success)`, which returns a Promise. The parameter (`success`) is a `boolean`.
+- Return a Promise using this prototype function getResponseFromAPI()
+```
+khalfan@aisha:~$ cat 0-main.js
+import getResponseFromAPI from "./0-promise.js";
+
+const response = getResponseFromAPI();
+console.log(response instanceof Promise);
+
+khalfan@aisha:~$ 
+khalfan@aisha:~$ npm run dev 0-main.js 
+true
+khalfan@aisha:~$ 
+```
+
+## Task 1. **Don't make a promise...if you know you can't keep it**<br/>[1-promise.js](1-promise.js) 
+contains a script that exports a function with the prototype `getFullResponseFromAPI(success)`, which returns a Promise. The parameter (`success`) is a `boolean`.
   + When the argument is:
     + `true`
       + Resolve the promise by passing an object with 2 attributes:
@@ -94,28 +109,108 @@ createUser returns a response with the format
     + `false`
       + Reject the promise with an error object with the message `The fake API is not working currently`.
 
-## Task 2. **Catch me if you can!**<br/>[2-then.js](2-then.js) contains a script that exports a function with the prototype `function handleResponseFromAPI(promise)`, which appends three handlers to the `promise` argument.
+- Try testing it out for yourself
+```
+khalfan@aisha:~$ cat 1-main.js
+import getFullResponseFromAPI from './1-promise';
+
+console.log(getFullResponseFromAPI(true));
+console.log(getFullResponseFromAPI(false));
+
+khalfan@aisha:~$ 
+khalfan@aisha:~$ npm run dev 1-main.js 
+Promise { { status: 200, body: 'Success' } }
+Promise {
+  <rejected> Error: The fake API is not working currently
+    ...
+    ...
+khalfan@aisha:~$ 
+```
+Repo:
+
+- GitHub repository: alx-backend-javascript
+- Directory: 0x01-ES6_promise
+- File: 1-promise.js
+
+## Task 2. **Catch me if you can!**
+<br/>[2-then.js](2-then.js) contains a script that exports a function with the prototype `function handleResponseFromAPI(promise)`, which appends three handlers to the `promise` argument.
+Using the function prototype below
+
+`function handleResponseFromAPI(promise`)
+Append three handlers to the function:
   + When the Promise resolves, return an object with the following attributes:
     + `status`: `200`,
     + `body`: `'success'`
   + When the Promise rejects, return an empty `Error` object.
   + For every resolution, log `Got a response from the API` to the console.
 
+```
+khalfan@aisha:~$ cat 2-main.js
+import handleResponseFromAPI from "./2-then";
+
+const promise = Promise.resolve();
+handleResponseFromAPI(promise);
+
+khalfan@aisha:~$ 
+khalfan@aisha:~$ npm run dev 2-main.js 
+Got a response from the API
+khalfan@aisha:~$ 
+Repo:
+```
+- GitHub repository: alx-backend-javascript
+- Directory: 0x01-ES6_promise
+- File: 2-then.js
+
 ## Task 3. **Handle multiple successful promises**<br/>[3-all.js](3-all.js) contains a script that meets the following requirements.
   + Import `uploadPhoto` and `createUser` from [utils.js](utils.js).
+  + Knowing that the functions in `utils.js` return promises, use the prototype below to collectively resolve all promises and log `body firstName lastName` to the console.
   + Use the prototype below to collectively resolve all promises and log `body firstName lastName` to the console. The functions in [utils.js](utils.js) return Promises.
     ```js
     function handleProfileSignup()
     ```
   + In the event of an error, log `Signup system offline` to the console.
 
-## Task 4. **Simple promise**<br/>[4-user-promise.js](4-user-promise.js) contains a script that exports a function with the prototype `function signUpUser(firstName, lastName)`, which returns a resolved promise with the object shown below.
+```
+khalfan@aisha:~$ cat 3-main.js
+import handleProfileSignup from "./3-all";
+
+handleProfileSignup();
+
+khalfan@aisha:~$ 
+khalfan@aisha:~$ npm run dev 3-main.js 
+photo-profile-1 Guillaume Salva
+khalfan@aisha:~$ 
+```
+Repo:
+
+- GitHub repository: alx-backend-javascript
+- Directory: 0x01-ES6_promise
+- File: 3-all.js
+
+## Task 4. **Simple promise**<br/>[4-user-promise.js](4-user-promise.js) contains a script that exports a function with the prototype `function signUpUser(firstName, lastName)`,
+That returns a resolved promise with the object shown below.
   ```js
   {
     firstName: value,
     lastName: value,
   }
   ```
+```
+khalfan@aisha:~$ cat 4-main.js
+import signUpUser from "./4-user-promise";
+
+console.log(signUpUser("Bob", "Dylan"));
+
+khalfan@aisha:~$ 
+khalfan@aisha:~$ npm run dev 4-main.js 
+Promise { { firstName: 'Bob', lastName: 'Dylan' } }
+khalfan@aisha:~$ 
+```
+Repo:
+
+- GitHub repository: alx-backend-javascript
+- Directory: 0x01-ES6_promise
+- File: 4-user-promise.js
 
 ## Task 5. **Reject the promises**<br/>[5-photo-reject.js](5-photo-reject.js) contains a script that exports a function with the prototype `function uploadPhoto(filename)`, which returns a Promise rejecting with an Error and the string `$fileName cannot be processed`, where `fileName` is a string.
 
