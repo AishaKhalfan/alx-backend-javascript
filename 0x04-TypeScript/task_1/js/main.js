@@ -7,6 +7,11 @@ interface Teacher {
   [index:string]: any;
 }
 
+interface Directors extends Teacher {
+  numberOfReports: number;
+}
+
+
 interface Studentint {
  firstName: string;
  lastName: string;
