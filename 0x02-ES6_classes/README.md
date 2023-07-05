@@ -60,7 +60,7 @@ Don’t forget to run $ npm install when you have the package.json
 ## Task 0. You used to attend a place like this at some point
 Implement a class named ``ClassRoom:``
 
-- Prototype: export default class ClassRoom
+- Prototype: ``export default class ClassRoom``
 - It should accept one attribute named maxStudentsSize (Number) and assigned to _maxStudentsSize
 ```
 khalfan@aisha:~$ cat 0-main.js
@@ -80,13 +80,11 @@ Repo:
 - Directory: 0x02-ES6_classes
 - File: 0-classroom.js
     
-1. Let's make some classrooms
-mandatory
-Score: 100.0% (Checks completed: 100.0%)
-Import the ClassRoom class from 0-classroom.js.
+# Task 1. Let's make some classrooms
+Import the ``ClassRoom`` class from ``0-classroom.js.``
 
-Implement a function named initializeRooms. It should return an array of 3 ClassRoom objects with the sizes 19, 20, and 34 (in this order).
-
+Implement a function named ``initializeRooms``. It should return an array of 3 	``ClassRoom`` objects with the sizes 19, 20, and 34 (in this order).
+```
 khalfan@aisha:~$ cat 1-main.js
 import initializeRooms from './1-make_classrooms.js';
 
@@ -100,24 +98,25 @@ khalfan@aisha:~$ npm run dev 1-main.js
   ClassRoom { _maxStudentsSize: 34 }
 ]
 khalfan@aisha:~$ 
+```
 Repo:
 
-GitHub repository: alx-backend-javascript
-Directory: 0x02-ES6_classes
-File: 1-make_classrooms.js
+- GitHub repository: alx-backend-javascript
+- Directory: 0x02-ES6_classes
+- File: 1-make_classrooms.js
     
-2. A Course, Getters, and Setters
-mandatory
-Score: 100.0% (Checks completed: 100.0%)
-Implement a class named HolbertonCourse:
+# Task 2. A Course, Getters, and Setters
+Implement a class named ``HolbertonCourse``:
 
-Constructor attributes:
-name (String)
-length (Number)
-students (array of Strings)
-Make sure to verify the type of attributes during object creation
-Each attribute must be stored in an “underscore” attribute version (ex: name is stored in _name)
-Implement a getter and setter for each attribute.
+- Constructor attributes:
+ + ``name`` (String)
+ + ``length`` (Number)
+ + ``students`` (array of Strings)
+- Make sure to verify the type of attributes during object creation
+- Each attribute must be stored in an “underscore” attribute version (ex: ``name`` is stored in `_name`)
+- Implement a getter and setter for each attribute.
+
+```
 khalfan@aisha:~$ cat 2-main.js
 import HolbertonCourse from "./2-hbtn_course.js";
 
@@ -153,11 +152,12 @@ TypeError: Name must be a string
 TypeError: Length must be a number
     ...
 khalfan@aisha:~$ 
+```
 Repo:
 
-GitHub repository: alx-backend-javascript
-Directory: 0x02-ES6_classes
-File: 2-hbtn_course.js
+- GitHub repository: alx-backend-javascript
+- Directory: 0x02-ES6_classes
+- File: 2-hbtn_course.js
     
 3. Methods, static methods, computed methods names..... MONEY
 mandatory
