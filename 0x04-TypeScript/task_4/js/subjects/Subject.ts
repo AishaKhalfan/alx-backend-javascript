@@ -1,6 +1,9 @@
-import { Subjects } from './Teacher';
-
-export namespace Subjects {
-    export interface Subject {
-        private _teacher: Teacher;
+namespace Subjects {
+    export class Subject {
+      teacher: Subjects.Teacher;
+  
+      set setTeacher(teacher: Subjects.Teacher) {
+        this.teacher = teacher;
+      }
     }
+  }
