@@ -4,7 +4,7 @@ export default class SkyHighBuilding extends Building {
   constructor(sqft, floors) {
     super(sqft);
     if (typeof floors === 'number') {
-      this.floors = floors;
+      this._floors = floors;
     } else {
       throw new TypeError('floor must be a Number');
     }

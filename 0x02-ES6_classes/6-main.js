@@ -1,7 +1,8 @@
 //import SkyHighBuilding from './6';
-import SkyHighBuilding from  './6-sky_high';
+import SkyHighBuilding from './6-sky_high';
 
 const building = new SkyHighBuilding(140, 60);
 console.log(building.sqft);
 console.log(building.floors);
 console.log(building.evacuationWarningMessage());
+
