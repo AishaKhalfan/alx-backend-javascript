@@ -8,8 +8,7 @@ export default class HolbertonClass {
     return this._location;
   }
 
-  // Returns the size of the airport.
-  toNumber() {
+  valueOf() {
     return this._size;
   }
 }
