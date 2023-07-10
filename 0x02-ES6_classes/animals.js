@@ -18,7 +18,7 @@ class Dog extends Animal {
   }
 }
 
-const d = new Dog("Mitzie");
+const d = new Dog('Mitzie');
 d.speak(); // Mitzie barks.
 
 class Cat {
@@ -38,7 +38,7 @@ class Lion extends Cat {
   }
 }
 
-const l = new Lion("Fuzzy");
+const l = new Lion('Fuzzy');
 l.speak();
 // Fuzzy makes a noise.
 // Fuzzy roars.

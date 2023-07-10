@@ -12,6 +12,5 @@ const child = {
 };
 console.log(child.method()); // 3
 
-
-child.value = 4; 
+child.value = 4;
 console.log(child.method()); // 5

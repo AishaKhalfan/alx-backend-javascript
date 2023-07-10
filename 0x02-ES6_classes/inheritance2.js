@@ -28,14 +28,14 @@ class Cat extends Animal {
   }
 }
 
-const d = new Dog("Mitzie");
+const d = new Dog('Mitzie');
 d.speak(); // Mitzie barks.
 
-const c = new Cat("Atesh");
+const c = new Cat('Atesh');
 c.speak(); // Atesh Meows
 
-//If there is a constructor present in the subclass, it needs to first call super() before using this. 
-//The super keyword can also be used to call corresponding methods of super class.
+// If there is a constructor present in the subclass, it needs to first call super() before using this.
+// The super keyword can also be used to call corresponding methods of super class.
 class Simba {
   constructor(name) {
     this.name = name;
@@ -53,8 +53,7 @@ class Lion extends Simba {
   }
 }
 
-const l = new Lion("Fuzzy");
+const l = new Lion('Fuzzy');
 l.speak();
 // Fuzzy makes a noise.
 // Fuzzy roars.
-
