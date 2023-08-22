@@ -1,7 +1,7 @@
 # 0x05-Node_JS_basic
 
 ``Back-end``|``JavaScript``|``ES6``|``NodeJS``|``ExpressJS``
-![img]()
+![img](https://github.com/AishaKhalfan/alx-backend-javascript/blob/main/0x05-Node_JS_basic/a2.jpeg)
 
 # Resources
 
