@@ -3,7 +3,7 @@ const readline = require('readline').createInterface({
   output: process.stdout
 });
 
-readline.question('What is your name? ', name => {
-  console.log(`Hello ${name}!`);
+readline.question('Welcome to Holberton School, what is your name?', name => {
+  console.log(`Your name is: ${name}`);
   readline.close();
 });
