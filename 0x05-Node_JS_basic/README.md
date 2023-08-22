@@ -111,8 +111,9 @@ module.exports = {
     ],
   ],
 };
-</details>
 ```
+</details>
+
 ``.eslintrc.js``
 
 <details>
@@ -156,8 +157,9 @@ module.exports = {
     }
   ]
 };
-</details>
 ```
+</details>
+
 
 **and…**
 Don’t forget to run ``$ npm install`` when you have the ``package.json``
@@ -543,9 +545,8 @@ If you want to add test to validate your integration, you will need to add this 
 {
     "presets": [["env", {"exclude": ["transform-regenerator"]}]]
 }
-
-</details>
 ```
+</details>
 
 Repo:
 
