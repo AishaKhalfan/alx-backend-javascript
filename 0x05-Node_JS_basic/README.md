@@ -90,9 +90,9 @@ Katie,Shirou,21,CS
     "sinon": "^7.5.0"
   }
 }
-
-</details>
 ```
+</details>
+
 
 ``babel.config.js``
 <details>
