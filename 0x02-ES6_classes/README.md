@@ -60,11 +60,12 @@ Don’t forget to run $ npm install when you have the package.json
 
 # Tasks
 ## Task 0. You used to attend a place like this at some point
-Implement a class ``name``d ``ClassRoom:``
+Implement a class named ``ClassRoom:``
 
 - Prototype: ``export default class ClassRoom``
-- It should accept one attribute ``name``d maxStudentsSize (Number) and assigned to _maxStudentsSize
-```
+- It should accept one attribute named ``maxStudentsSize (Number)`` and assigned to ``_maxStudentsSize``
+
+```bash
 khalfan@aisha:~$ cat 0-main.js
 import ClassRoom from "./0-classroom.js";
 
@@ -85,8 +86,9 @@ Repo:
 # Task 1. Let's make some classrooms
 Import the ``ClassRoom`` class from ``0-classroom.js.``
 
-Implement a function ``name``d ``initializeRooms``. It should return an array of 3 	``ClassRoom`` objects with the sizes 19, 20, and 34 (in this order).
-```
+Implement a function named ``initializeRooms``. It should return an array of 3 	``ClassRoom`` objects with the sizes 19, 20, and 34 (in this order).
+
+```bash
 khalfan@aisha:~$ cat 1-main.js
 import initializeRooms from './1-make_classrooms.js';
 
@@ -108,27 +110,27 @@ Repo:
 - File: 1-make_classrooms.js
     
 # Task 2. A Course, Getters, and Setters
-Implement a class ``name``d ``HolbertonCourse``:
+Implement a class named ``HolbertonCourse``:
 
 - Constructor attributes:
- + ````name```` (String)
+ + ``name`` (String)
  + ``length`` (Number)
  + ``students`` (array of Strings)
 - Make sure to verify the type of attributes during object creation
-- Each attribute must be stored in an “underscore” attribute version (ex: ````name```` is stored in `_``name```)
+- Each attribute must be stored in an “underscore” attribute version (ex: ``name`` is stored in ``_name``
 - Implement a getter and setter for each attribute.
 
-```
+```bash
 khalfan@aisha:~$ cat 2-main.js
 import HolbertonCourse from "./2-hbtn_course.js";
 
 const c1 = new HolbertonCourse("ES6", 1, ["Bob", "Jane"])
-console.log(c1.``name``);
-c1.``name`` = "Python 101";
+console.log(c1.name);
+c1.name = "Python 101";
 console.log(c1);
 
 try {
-    c1.``name`` = 12;
+    c1.name = 12;
 } 
 catch(err) {
     console.log(err);
@@ -145,7 +147,7 @@ khalfan@aisha:~$
 khalfan@aisha:~$ npm run dev 2-main.js 
 ES6
 HolbertonCourse {
-  _``name``: 'Python 101',
+  _name: 'Python 101',
   _length: 1,
   _students: [ 'Bob', 'Jane' ]
 }
@@ -163,15 +165,16 @@ Repo:
     
 # Task 3. Methods, static methods, computed methods ``name``s..... MONEY
 
-Implement a class ``name``d ``Currency``:
+Implement a class named ``Currency``:
 
 - Constructor attributes:
 	+ ``code`` (String)
-	+ ````name```` (String)
-- Each attribute must be stored in an “underscore” attribute version (ex: ````name```` is stored in ``_``name````)
+	+ ``name`` (String)
+- Each attribute must be stored in an “underscore” attribute version (ex: ``name`` is stored in ``_name``)
 - Implement a getter and setter for each attribute.
-- Implement a method named ``displayFullCurrency`` that will return the attributes in the following format ``name`` (code).
-```
+- Implement a method named ``displayFullCurrency`` that will return the attributes in the following format ``name (code)``.
+
+```bash
 khalfan@aisha:~$ cat 3-main.js
 import Currency from "./3-currency.js";
 
@@ -199,9 +202,10 @@ Implement a class ``name``d <span style"color:blue">Pricing</span>:
 	+ ``currency`` (Currency)
 - Each attribute must be stored in an “underscore” attribute version (ex: ``name`` is stored in _``name``)
 - Implement a getter and setter for each attribute.
-- Implement a method ``name``d ``displayFullPrice`` that returns the attributes in the following format ``amount currency_``name`` (currency_code)``.
+- Implement a method named ``displayFullPrice`` that returns the attributes in the following format amount currency_ name (currency_code).
 - Implement a static method named ``convertPrice``. It should accept two arguments: ``amount`` (Number), ``conversionRate`` (Number). The function should return the amount multiplied by the conversion rate.
-```
+
+```bash
 khalfan@aisha:~$ cat 4-main.js
 import Pricing from './4-pricing.js';
 import Currency from './3-currency.js';
@@ -219,6 +223,7 @@ Pricing {
 100 Euro (EUR)
 khalfan@aisha:~$ 
 ```
+
 Repo:
 
 - GitHub repository: alx-backend-javascript
@@ -226,7 +231,7 @@ Repo:
 - File: 4-pricing.js
     
 # Task 5. A Building
-Implement a class ``name``d <span style"color:blue">Building</span>:
+Implement a class named <span style"color:blue">Building</span>:
 
 - Constructor attributes:
 	+ sqft (Number)
