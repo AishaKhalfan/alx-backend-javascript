@@ -302,14 +302,15 @@ Repo:
 - File: 6-sky_high.js
      
 #Task 7. Airport
-Implement a class ``name``d Airport:
+Implement a class named ``Airport``:
 
 - Constructor attributes:
-	+ ````name```` (String)
+	+ ``name`` (String)
 	+ ``code`` (String)
 - Each attribute must be stored in an “underscore” attribute version (ex: ``name`` is stored in ``_name``)
 - The default string description of the class should return the airport code (example below).
-```
+
+```bash
 khalfan@aisha:~$ cat 7-main.js
 import Airport from "./7-airport.js";
 
@@ -360,7 +361,7 @@ Repo:
      
 # Task 9. Hoisting
 Fix this code and make it work.
-```
+```js
 const class2019 = new HolbertonClass(2019, 'San Francisco');
 const class2020 = new HolbertonClass(2020, 'San Francisco');
 
@@ -410,7 +411,7 @@ export const listOfStudents = [student1, student2, student3, student4, student5]
 ```
 
 Result:
-```
+```bash
 khalfan@aisha:~$ cat 9-main.js
 import listOfStudents from "./9-hoisting.js";
 
