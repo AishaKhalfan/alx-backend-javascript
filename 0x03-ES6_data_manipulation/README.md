@@ -50,9 +50,10 @@ in your project directory, install Jest, Babel and ESList by using the supplied 
 Configuration files
 Add the following files to your project directory
 
-**package.json**
+``package.json``
 <details>
 <summary>Click to show/hide file contents</summary>
+
 ```json
 {
   "scripts": {
@@ -76,9 +77,11 @@ Add the following files to your project directory
 ```
 </details>
 
-**babel.config.js**
+``babel.config.js``
+
 <details>
 <summary>Click to show/hide file contents</summary>
+
 ```js
 module.exports = {
   presets: [
@@ -93,12 +96,14 @@ module.exports = {
   ],
 };
 ```
+
 </details>
 
-**.eslintrc.js**
+``.eslintrc.js``
 
 <details>
 <summary>Click to show/hide file contents</summary>
+
 ```js
 module.exports = {
   env: {
@@ -138,6 +143,7 @@ module.exports = {
   ]
 };
 ```
+
 </details>
 
 **and…**
