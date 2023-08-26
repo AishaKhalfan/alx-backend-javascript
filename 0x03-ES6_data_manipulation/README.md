@@ -53,6 +53,7 @@ Add the following files to your project directory
 **package.json**
 <details>
 <summary>Click to show/hide file contents</summary>
+```json
 {
   "scripts": {
     "lint": "./node_modules/.bin/eslint",
@@ -72,12 +73,13 @@ Add the following files to your project directory
     "jest": "^24.9.0"
   }
 }
-
+```
 </details>
 
 **babel.config.js**
 <details>
 <summary>Click to show/hide file contents</summary>
+```js
 module.exports = {
   presets: [
     [
@@ -90,13 +92,14 @@ module.exports = {
     ],
   ],
 };
-
+```
 </details>
 
 **.eslintrc.js**
 
 <details>
 <summary>Click to show/hide file contents</summary>
+```js
 module.exports = {
   env: {
     browser: false,
@@ -134,7 +137,7 @@ module.exports = {
     }
   ]
 };
-
+```
 </details>
 
 **and…**
