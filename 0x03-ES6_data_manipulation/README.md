@@ -151,19 +151,19 @@ Don’t forget to run ``$ npm install`` when you have the package.json
     + `James`, id: `2`, in `Columbia`.
     + `Serena`, id: `5`, in `San Francisco`.
 ```bash
-bob@dylan:~$ cat 0-main.js
+khalfan@aisha:~$ cat 0-main.js
 import getListStudents from "./0-get_list_students.js";
 
 console.log(getListStudents());
 
-bob@dylan:~$ 
-bob@dylan:~$ npm run dev 0-main.js 
+khalfan@aisha:~$ 
+khalfan@aisha:~$ npm run dev 0-main.js 
 [
   { id: 1, firstName: 'Guillaume', location: 'San Francisco' },
   { id: 2, firstName: 'James', location: 'Columbia' },
   { id: 5, firstName: 'Serena', location: 'San Francisco' }
 ]
-bob@dylan:~$ 
+khalfan@aisha:~$ 
 ```
 
 + [x] 1. **More mapping**<br/>[1-get_list_student_ids.js](1-get_list_student_ids.js)
@@ -173,18 +173,18 @@ bob@dylan:~$
   + If the argument is not an array, the function returns an empty array.
   + You must use the map function on the array.
 ```bash
-bob@dylan:~$ cat 1-main.js
+khalfan@aisha:~$ cat 1-main.js
 import getListStudentIds from "./1-get_list_student_ids.js";
 import getListStudents from "./0-get_list_students.js";
 
 console.log(getListStudentIds("hello"));
 console.log(getListStudentIds(getListStudents()));
 
-bob@dylan:~$ 
-bob@dylan:~$ npm run dev 1-main.js 
+khalfan@aisha:~$ 
+khalfan@aisha:~$ npm run dev 1-main.js 
 []
 [ 1, 2, 5 ]
-bob@dylan:~$ 
+khalfan@aisha:~$ 
 ```
 
 + [x] 2. **Filter**<br/>[2-get_students_by_loc.js](2-get_students_by_loc.js)
@@ -193,7 +193,7 @@ bob@dylan:~$
   + It should accept a list of students (from `getListStudents`) and a `city` (string) as parameters.
   + You must use the `filter` function on the array.
 ```bash
-bob@dylan:~$ cat 2-main.js
+khalfan@aisha:~$ cat 2-main.js
 import getListStudents from "./0-get_list_students.js";
 import getStudentsByLocation from "./2-get_students_by_loc.js";
 
@@ -201,13 +201,13 @@ const students = getListStudents();
 
 console.log(getStudentsByLocation(students, 'San Francisco'));
 
-bob@dylan:~$ 
-bob@dylan:~$ npm run dev 2-main.js 
+khalfan@aisha:~$ 
+khalfan@aisha:~$ npm run dev 2-main.js 
 [
   { id: 1, firstName: 'Guillaume', location: 'San Francisco' },
   { id: 5, firstName: 'Serena', location: 'San Francisco' }
 ]
-bob@dylan:~$ 
+khalfan@aisha:~$ 
 ```
 
 + [x] 3. **Reduce**<br/>[3-get_ids_sum.js](3-get_ids_sum.js)
@@ -216,7 +216,7 @@ bob@dylan:~$
   + It should accept a list of students (from `getListStudents`) as a parameter.
   + You must use the `reduce` function on the array.
 ```bash
-bob@dylan:~$ cat 3-main.js
+khalfan@aisha:~$ cat 3-main.js
 import getListStudents from "./0-get_list_students.js";
 import getStudentIdsSum from "./3-get_ids_sum.js";
 
@@ -225,10 +225,10 @@ const value = getStudentIdsSum(students);
 
 console.log(value);
 
-bob@dylan:~$ 
-bob@dylan:~$ npm run dev 3-main.js 
+khalfan@aisha:~$ 
+khalfan@aisha:~$ npm run dev 3-main.js 
 8
-bob@dylan:~$ 
+khalfan@aisha:~$ 
 ```
 
 + [x] 4. **Combine**<br/>[4-update_grade_by_city.js](4-update_grade_by_city.js) contains a script that exports a function named `updateStudentGradeByCity` with the following requirements:
@@ -245,7 +245,7 @@ If a student doesn’t have grade in newGrades, the final grade should be N/A.
 
 You must use filter and map combined.
 ```bash
-bob@dylan:~$ cat 4-main.js
+khalfan@aisha:~$ cat 4-main.js
 import getListStudents from "./0-get_list_students.js";
 import updateStudentGradeByCity from "./4-update_grade_by_city.js";
 
@@ -253,8 +253,8 @@ console.log(updateStudentGradeByCity(getListStudents(), "San Francisco", [{ stud
 
 console.log(updateStudentGradeByCity(getListStudents(), "San Francisco", [{ studentId: 5, grade: 97 }]));
 
-bob@dylan:~$ 
-bob@dylan:~$ npm run dev 4-main.js 
+khalfan@aisha:~$ 
+khalfan@aisha:~$ npm run dev 4-main.js 
 [
   {
     id: 1,
@@ -273,7 +273,7 @@ bob@dylan:~$ npm run dev 4-main.js
   },
   { id: 5, firstName: 'Serena', location: 'San Francisco', grade: 97 }
 ]
-bob@dylan:~$ 
+khalfan@aisha:~$ 
 ```
 
 + [x] 5. **Typed Arrays**<br/>[5-typed_arrays.js](5-typed_arrays.js) contains a script that exports a function named `createInt8TypedArray` with the following requirements:
@@ -281,13 +281,13 @@ bob@dylan:~$
   + It should accept three arguments: `length` (Number), `position` (Number), and `value` (Number).
   + If adding the value is not possible the error `Position outside range` should be thrown.
 ```bash
-bob@dylan:~$ cat 5-main.js
+khalfan@aisha:~$ cat 5-main.js
 import createInt8TypedArray from "./5-typed_arrays.js";
 
 console.log(createInt8TypedArray(10, 2, 89));
 
-bob@dylan:~$ 
-bob@dylan:~$ npm run dev 5-main.js 
+khalfan@aisha:~$ 
+khalfan@aisha:~$ npm run dev 5-main.js 
 DataView {
   byteLength: 10,
   byteOffset: 0,
@@ -296,7 +296,7 @@ DataView {
     byteLength: 10
   }
 }
-bob@dylan:~$ 
+khalfan@aisha:~$ 
 ```
 
 + [x] 6. **Set data structure**<br/>[6-set.js](6-set.js)
@@ -304,34 +304,34 @@ bob@dylan:~$
 
   + It accepts an argument (Array, of any kind of element).
 ```bash
-bob@dylan:~$ cat 6-main.js
+khalfan@aisha:~$ cat 6-main.js
 import setFromArray from "./6-set.js";
 
 console.log(setFromArray([12, 32, 15, 78, 98, 15]));
 
-bob@dylan:~$ 
-bob@dylan:~$ npm run dev 6-main.js 
+khalfan@aisha:~$ 
+khalfan@aisha:~$ npm run dev 6-main.js 
 Set { 12, 32, 15, 78, 98 }
-bob@dylan:~$ 
+khalfan@aisha:~$ 
 ```
 
 + [x] 7. **More set data structure**<br/>[7-has_array_values.js](7-has_array_values.js) contains a script that exports a function named `hasValuesFromArray` with the following requirements:
   + Returns a boolean if all the elements in the array exist within the set.
   + It accepts two arguments: a `set` (Set) and an `array` (Array).
 ```bash
-bob@dylan:~$ cat 7-main.js
+khalfan@aisha:~$ cat 7-main.js
 import hasValuesFromArray from "./7-has_array_values.js";
 
 console.log(hasValuesFromArray(new Set([1, 2, 3, 4, 5]), [1]));
 console.log(hasValuesFromArray(new Set([1, 2, 3, 4, 5]), [10]));
 console.log(hasValuesFromArray(new Set([1, 2, 3, 4, 5]), [1, 10]));
 
-bob@dylan:~$ 
-bob@dylan:~$ npm run dev 7-main.js 
+khalfan@aisha:~$ 
+khalfan@aisha:~$ npm run dev 7-main.js 
 true
 false
 false
-bob@dylan:~$ 
+khalfan@aisha:~$ 
 ```
 
 + [x] 8. **Clean set**<br/>[8-clean_set.js](8-clean_set.js) contains a script that exports a function named `cleanSet` with the following requirements:
@@ -339,17 +339,17 @@ bob@dylan:~$
   + It accepts two arguments: a `set` (Set) and a `startString` (String).
   + When a value starts with `startString` you only append the rest of the string. The string contains all the values of the set separated by `-`.
 ```bash
-bob@dylan:~$ cat 8-main.js
+khalfan@aisha:~$ cat 8-main.js
 import cleanSet from "./8-clean_set.js";
 
 console.log(cleanSet(new Set(['bonjovi', 'bonaparte', 'bonappetit', 'banana']), 'bon'));
 console.log(cleanSet(new Set(['bonjovi', 'bonaparte', 'bonappetit', 'banana']), ''));
 
-bob@dylan:~$ 
-bob@dylan:~$ npm run dev 8-main.js 
+khalfan@aisha:~$ 
+khalfan@aisha:~$ npm run dev 8-main.js 
 jovi-aparte-appetit
 
-bob@dylan:~$ 
+khalfan@aisha:~$ 
 ```
 
 + [x] 9. **Map data structure**<br/>[9-groceries_list.js](9-groceries_list.js) contains a script that exports a function named `groceriesList` with the following requirements:
@@ -363,13 +363,13 @@ bob@dylan:~$
     ```
 Result:
 ```bash
-bob@dylan:~$ cat 9-main.js
+khalfan@aisha:~$ cat 9-main.js
 import groceriesList from "./9-groceries_list.js";
 
 console.log(groceriesList());
 
-bob@dylan:~$ 
-bob@dylan:~$ npm run dev 9-main.js 
+khalfan@aisha:~$ 
+khalfan@aisha:~$ npm run dev 9-main.js 
 Map {
   'Apples' => 10,
   'Tomatoes' => 10,
@@ -377,14 +377,14 @@ Map {
   'Rice' => 1,
   'Banana' => 5
 }
-bob@dylan:~$ 
+khalfan@aisha:~$ 
 ```
 + [x] 10. **More map data structure**<br/>[10-update_uniq_items.js](10-update_uniq_items.js) contains a script that exports a function named `updateUniqueItems` with the following requirements:
   + Returns an updated map for all items with initial quantity at 1.
   + It should accept a map as an argument. The map it accepts for argument is similar to the map you create in the previous task.
   + For each entry of the map where the quantity is 1, update the quantity to 100. If updating the quantity is not possible (argument is not a map) the error `Cannot process` should be thrown.
 ```bash
-bob@dylan:~$ cat 10-main.js
+khalfan@aisha:~$ cat 10-main.js
 import updateUniqueItems from "./10-update_uniq_items.js";
 import groceriesList from "./9-groceries_list.js";
 
@@ -394,8 +394,8 @@ console.log(map);
 updateUniqueItems(map)
 console.log(map);
 
-bob@dylan:~$ 
-bob@dylan:~$ npm run dev 10-main.js 
+khalfan@aisha:~$ 
+khalfan@aisha:~$ npm run dev 10-main.js 
 Map {
   'Apples' => 10,
   'Tomatoes' => 10,
@@ -410,7 +410,7 @@ Map {
   'Rice' => 100,
   'Banana' => 5
 }
-bob@dylan:~$ 
+khalfan@aisha:~$ 
 ```
 
 + [x] 11. **Weak link data structure**<br/>[100-weak.js](100-weak.js) contains a script that meets the following requirements:
@@ -426,7 +426,7 @@ bob@dylan:~$
   + When the number of queries is >= 5 throw an error with the message `Endpoint load is high`.
 
 ```bash
-bob@dylan:~$ cat 100-main.js
+khalfan@aisha:~$ cat 100-main.js
 import { queryAPI, weakMap } from "./100-weak.js";
 
 const endpoint = { protocol: 'http', name: 'getUsers' };
@@ -443,12 +443,12 @@ queryAPI(endpoint);
 queryAPI(endpoint);
 queryAPI(endpoint);
 
-bob@dylan:~$ 
-bob@dylan:~$ npm run dev 100-main.js 
+khalfan@aisha:~$ 
+khalfan@aisha:~$ npm run dev 100-main.js 
 1
 2
 .../100-weak.js:16
     throw new Error('Endpoint load is high');
    ...
-bob@dylan:~$ 
+khalfan@aisha:~$ 
 ```
