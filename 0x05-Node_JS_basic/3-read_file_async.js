@@ -31,10 +31,10 @@ async function countStudents(path) {
       resolve();
     });
   });
-};
-module.exports = countStudents
+}
+module.exports = countStudents;
 // Usage
-//const databasePath = 'database.csv';
-//countStudents(databasePath)
-  //.then(() => console.log('Process completed'))
-  //.catch((error) => console.error(error.message));
+// const databasePath = 'database.csv';
+// countStudents(databasePath)
+// .then(() => console.log('Process completed'))
+// .catch((error) => console.error(error.message));
