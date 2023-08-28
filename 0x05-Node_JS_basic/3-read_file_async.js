@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const countStudents = (path) => {
+async function countStudents(path) {
   return new Promise((resolve, reject) => {
     fs.readFile(path, 'utf8', (err, response) => {
       if (err) {
@@ -32,7 +32,7 @@ const countStudents = (path) => {
     });
   });
 };
-
+module.exports = countStudents
 // Usage
 //const databasePath = 'database.csv';
 //countStudents(databasePath)
